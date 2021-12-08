@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         countryList = (ListView) findViewById(R.id.countryList);
-        ArrayAdapter<String> countryAarrayAdapter = new ArrayAdapter<String>(this, R.layout.activity_main, nazioni);
-        countryList.setAdapter(countryAarrayAdapter);
+        ArrayAdapter<String> countryArrayAdapter = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, nazioni);
+        countryList.setAdapter(countryArrayAdapter);
 
     }
 }
