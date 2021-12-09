@@ -2,23 +2,28 @@ package com.example.array;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
+import android.content.*;
+import android.os.*;
+import android.view.*;
+import android.widget.*;
 
 public class MainActivity extends AppCompatActivity {
 
-    String nazioni[] = {"Italia", "Germania", "Olanda", "Stati Uniti"};
-    ListView countryList;
+    Button button1;
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        countryList = (ListView) findViewById(R.id.countryList);
-        ArrayAdapter<String> countryArrayAdapter = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, nazioni);
-        countryList.setAdapter(countryArrayAdapter);
-
+        button1 = findViewById(R.id.btn1);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(MainActivity.this, Listview.class);
+                startActivity(intent);
+            }
+        });
     }
 }
