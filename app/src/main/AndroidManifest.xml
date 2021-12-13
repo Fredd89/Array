@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Array">
         <activity
+            android:name=".Display_activity"
+            android:exported="false" />
+        <activity
             android:name=".Listview"
             android:exported="true" />
         <activity
