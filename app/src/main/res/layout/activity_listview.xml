@@ -7,14 +7,28 @@
     tools:context=".Listview">
 
     <ListView
-        android:id="@+id/countryList"
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:id="@+id/filmList"
+        android:layout_width="412dp"
+        android:layout_height="613dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="117dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="51dp"
+        android:text="Select Film"
+        app:layout_constraintBottom_toTopOf="@+id/filmList"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
