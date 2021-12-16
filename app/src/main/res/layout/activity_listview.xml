@@ -28,6 +28,7 @@
         android:layout_marginEnd="166dp"
         android:layout_marginBottom="51dp"
         android:text="Select Film"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/filmList"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

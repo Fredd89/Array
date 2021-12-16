@@ -13,6 +13,7 @@ import android.widget.ListView;
 public class Listview extends AppCompatActivity {
 
     String film[] = {"The Phantom Menace", "Attack Of The Clones", "Revenge Of The Sith", "Spiderman No Way Home"};
+    int poster[] = {R.drawable.the_phantom_menace, R.drawable.the_attack_of_the_clones, R.drawable.revenge_of_the_sith, R.drawable.spiderman_no_way_home};
 
     ListView filmList;
 
@@ -29,6 +30,7 @@ public class Listview extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(Listview.this, Display_activity.class);
+                intent.putExtra("image", poster[position]);
                 startActivity(intent);
             }
         });
